@@ -57,9 +57,7 @@ async function skipQuestWaitingTime() {
 async function handleClanQuest() {
     const activeQuest = await getActiveQuest();
 
-    if (activeQuest && !activeQuest.quest.purchasableWithGems) {
-        console.log('Skip nhiệm vụ không khả dụng vì không thể mua bằng gems hoặc gold.');
-    } else if (activeQuest) {
+    if (activeQuest) {
         await skipQuestWaitingTime();
     }
 }
