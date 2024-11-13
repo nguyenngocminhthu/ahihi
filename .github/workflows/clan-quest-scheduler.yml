@@ -2,7 +2,7 @@ name: Clan Quest Scheduler
 
 on:
   schedule:
-    - cron: '*/30 * * * *' # Runs every 30 minutes
+    - cron: '*/1 * * * *'
 
   workflow_dispatch: # Allows you to manually trigger the workflow
 
