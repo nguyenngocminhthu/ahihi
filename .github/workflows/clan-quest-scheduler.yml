@@ -23,4 +23,10 @@ jobs:
         run: npm install
 
       - name: Run handleClanQuest
-        run: node index.js
+        run: |
+          node -e "
+          setInterval(() => {
+            const { handleClanQuest } = require('./index');
+            handleClanQuest();
+          }, 30000);  // Every 30 seconds
+          "

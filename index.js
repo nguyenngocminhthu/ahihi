@@ -66,3 +66,5 @@ async function handleClanQuest() {
 
 // Chạy hàm để kiểm tra và skip nhiệm vụ
 handleClanQuest();
+
+module.exports = { handleClanQuest };
