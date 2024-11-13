@@ -1,8 +1,9 @@
 name: Clan Quest Scheduler
 
 on:
-  schedule:
-    - cron: '*/1 * * * *'
+  # Tắt cron schedule (chạy tự động)
+  # schedule:
+  #   - cron: '*/1 * * * *'
 
   workflow_dispatch: # Allows you to manually trigger the workflow
 
